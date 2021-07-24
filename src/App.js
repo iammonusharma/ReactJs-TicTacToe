@@ -13,11 +13,11 @@ const itemArray=new Array(9).fill("empty");
 
 const App=()=> {
   const [isCross,setIsCross]=useState(false)
-  const [winMessage,setWinMessage]=useState("circle");
+  const [winMessage,setWinMessage]=useState("");
 
   const reloadGame=()=>{
     setIsCross(false);
-    setWinMessage("");
+    setWinMessage(" ");
     itemArray.fill("empty",0,9);
   };
   const checkIsWinner=()=>{
